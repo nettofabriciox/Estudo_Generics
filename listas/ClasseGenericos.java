@@ -3,15 +3,15 @@ package listas;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClasseGenericos {
+public class ClasseGenericos<T> {
 
-	List<Integer> agenda = new ArrayList<>();
+	List<T> agenda = new ArrayList<>();
 	
-	public void addLista(Integer valor) {
+	public void addLista(T valor) {
 		agenda.add(valor);
 	}
 	
-	public Integer primeiroDado() {
+	public T primeiroDado() {
 		if(agenda.isEmpty()) {
 			throw new IllegalStateException("lista vazia");
 		}

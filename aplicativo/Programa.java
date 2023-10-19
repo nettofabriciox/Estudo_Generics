@@ -12,11 +12,12 @@ public class Programa {
 
 		Scanner capturarDados = new Scanner(System.in);
 
-		ClasseGenericos cg = new ClasseGenericos();
+		ClasseGenericos<String> cg = new ClasseGenericos<>();
 		System.out.println("Entre com quantidade de valores? ");
 		Integer valor = capturarDados.nextInt();
+		capturarDados.nextLine();
 		for (int i = 0; i < valor; i++) {
-			Integer valores = capturarDados.nextInt();
+			String valores = capturarDados.nextLine();
 			cg.addLista(valores);
 		}
 		
