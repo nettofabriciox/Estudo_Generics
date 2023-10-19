@@ -19,11 +19,13 @@ public class ClasseGenericos {
 	}
 	
 	public void printar() {
-		System.out.print("[ "
-				+ "");
-		for(Integer x: agenda) {
-			System.out.print(x + " ");
+		System.out.print("[ ");
+		if(!agenda.isEmpty()) {
+			System.out.print(agenda.get(0));
 		}
-		System.out.println("]");
+		for(int i=1; i<agenda.size(); i++) {
+			System.out.print(", " + agenda.get(i));
+		}
+		System.out.println(" ]");
 	}
 }

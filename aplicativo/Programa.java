@@ -1,5 +1,7 @@
 package aplicativo;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 import listas.ClasseGenericos;
@@ -20,6 +22,7 @@ public class Programa {
 		
 		cg.printar();
 		System.out.println("Primeiro valor adicionado foi: "+cg.primeiroDado());
+		
 
 	}
 }
